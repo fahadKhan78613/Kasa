@@ -1,0 +1,61 @@
+/* General Styles */
+.banner {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 15px;
+    filter: drop-shadow(0px 2px 2px #00000059);
+}
+
+.banner-image {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 15px;
+    filter: brightness(35%);
+    object-fit: cover;
+    min-height: 111px;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    white-space: nowrap;
+}
+
+/* Media Queries */
+@media screen and (max-width: 960px) {
+    .banner {
+        margin-top: 20px;
+    }
+
+    .banner-text {
+        line-height: 24px;
+        letter-spacing: 0;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .banner-text {
+        font-size: 26px;
+        text-align: left;
+    }
+
+    .banner-text span {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .banner {
+        filter: none;
+    }
+}
